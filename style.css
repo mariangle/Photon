@@ -5,49 +5,66 @@
 }
 
 header{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+
+}
+nav{
     display: flex;
-    flex-direction: column;
-    min-height: 30vh;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 82%;
+    margin: auto;
+
 }
 header h2{
-    padding: 2rem;
+    padding: 1rem;
 
 }
 #logo{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .search-form{
+    height: 80px;
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
+    width: 400px;
 }
 .search-form input{
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 0.5rem;
     width: 100%;
     border: none;
-    border: 2px solid rgb(62, 153, 118);
 }
 .search-form button{
     border: none;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
-    background: rgb(62, 153, 118);
-    color: white;
-    cursor:pointer
+    background: white;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-form button img{
+    height: 20px;
+}
+.space{
+    height: 5rem;
 }
 
 .gallery-info{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: grey;
+    color: black;
     padding: 0.5rem 0rem;
 }
 .gallery-info a{
-    color: grey;
+    color: black;
 }
 .gallery{
     display: grid;
@@ -74,7 +91,7 @@ header h2{
 
 .more{
     padding: 1rem 3rem;
-    background: rgb(62, 153, 118);
+    background: black;
     color: white;
     border: none;
     font-size: 1.2rem;
